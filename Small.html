@@ -1,8 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang='en-US'>
   <head>
     <title>Sample Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
- 
+
 
   <body style='background-color: beige;'>
     <!--Heading-->
@@ -19,64 +22,77 @@
 
     <!--Nesting Tags-->
 
-    <p></p>This exercise about nesting div tags</p>
-    <div>This div contains this text and the div tag below</div>
-      <div>Hi, I'm the div tag that was mentioned in my parent div! I contain this text and two other children divs</div>
-        <div>Hi! Our parent was just talking about us. Please make sure you indent this example appropriately.</div>
-        <div>Hi! Our parent was just talking about us. Please make sure you indent this example appropriately.</div>
+    <div>This exercise about nesting div tags
+    This div contains this text and the div tag below
+      <div>
+        Hi, I'm the div tag that was mentioned in my parent div! I contain this text and two other children divs
+        <div>
+          Hi! Our parent was just talking about us. Please make sure you indent this example appropriately.</div>
+        <div>
+        Hi! Our parent was just talking about us. Please make sure you indent this example appropriately.
+        </div> 
+      </div>    
+    </div>
+    
+    
 
     <!--Lists-->
+    <div>
+      <p>This exercise about making lists</p>
 
-    <p>This exercise about making lists</p>
+      <p>Here's what i like about list:</p>
+      <ul>
+        <li>They're useful for displaying list of stuff</li>
+        <li>That's about it</li>
+        <li>I'm gunna put another list item here because doing things in threes is cool</li>
+      </ul>
+    </div>  
 
-    <p>Here's what i like about list:</p>
-    <ul>
-      <li>They're useful for displaying list of stuff</li>
-      <li>That's about it</li>
-      <li>I'm gunna put another list item here because doing things in threes is cool</li>
-    </ul>
-
-    <p>When you make a list, do it in this order:</p>
-    <ol>
-      <li>Decide if it's an ordered list or not</li>
-      <li>If it's not an ordered list, use the ul tag, otherwise use the ol tag</li>
-        <ul>
-          <li>use li tags nested in the list for your list items</li>
-        </ul>
-          <ol>Curveball! You can nest list inside each other</ol>
-      <li>You've got this, I believe in you!</li>
-        
-    </ol>
+    <div>
+      <p>When you make a list, do it in this order:</p>
+      <ol>
+        <li>Decide if it's an ordered list or not</li>
+        <li>If it's not an ordered list, use the ul tag, otherwise use the ol tag</li>
+          <ul>
+            <li>use li tags nested in the list for your list items</li>
+          </ul>
+            <ol>
+              <li>Curveball! You can nest list inside each other</li>
+            </ol>
+        <li>You've got this, I believe in you!</li>   
+      </ol>
+    </div>  
 
 
     <!--Lines-->
-    <h3>Lines. So many lines.</h3>
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-    <br>
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-    <br>
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-    <br>
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-    <br>
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-    <br>
-    <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
-
-    <small>I'm sorry...</small>
+    <div>
+      <h3>Lines. So many lines.</h3>
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <br>
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <br>
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <br>
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <br>
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <br>
+      <hr style="border: 1px solid black; margin: 0px 0px 0px 1px;">
+      <small>I'm sorry...</small>
+    </div>
 
 
     <!--Styling Text-->
     <p>Here's a couple ways you can express yourself</p>
 
     <ul>if you want to sound normal, just use a regular li tag here</ul>
-    <ul>if you want to sound <em>interesting, try the italics tag</em></ul>
+    <ul><em>if you want to sound interesting, try the italics tag</em></ul>
     <ul><strong>if you want to sound annoying, try the bold tag</strong></ul>
 
     <p>You did it! you should be proud of yourself</p>
@@ -99,8 +115,9 @@
     </div>
 
     <div style="width:100px; margin:auto; position:relative;">
-      <embed src='sounds/snowflake_-_Heartbeat.mp3' width='200' height='90 loop='false' autostart='false'></embed>
+      <embed src='sounds/snowflake_-_Heartbeat.mp3' width='200' loop='false' autostart='false'></embed>
     </div>
 
   </body>
 </html>
+
