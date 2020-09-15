@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Customize Your Pizza!</h1>
+  <form>
+    <fieldset>
+      <legend>Type of Crust</legend>
+        <label for="crust"></label>
+        <select name="crust" id="crust">
+          <option value="" disable selected>Choose an option</option>
+          <option value="thick">Thick</option>
+          <option value="thin">Thin</option>
+          <option value="keto">Keto</option>      
+        </select>
+    </fieldset>
+
+      <br>
+
+
+    <fieldset>
+      <legend>Select your toppings</legend>
+      <p>
+        <div>
+          <label for="cheese">Cheese</label>
+          <input type="checkbox" name='toppings' id='cheese' value='cheese'>
+        </div>
+      </p>
+      <p>
+        <div>
+          <label for="sausage">Sausage</label>
+          <input type="checkbox" name='toppings' id='sausage' value='sausage'>
+        </div>
+      </p>
+      <p>
+        <div>
+          <label for="pineapples">Pineapples</label>
+          <input type="checkbox" name='toppings' id='pineapples' value='pineapples'>
+        </div>
+      </p>
+      <p>
+        <div>
+          <label for="chicken">Chicken</label>
+          <input type="checkbox" name='toppings' id='chicken' value='chicken'>
+        </div>
+      </p>
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Order Type</legend>
+      <label for="delivery">Delivery</label>
+      <input type="radio" name='deliveryOrPickup' id='delivery' value='delivery'>
+      <label for="pickup">Pickup</label>
+      <input type="radio" name='deliveryOrPickup' id='pickup' value='pickup'>
+    </fieldset>
+
+    <br>
+
+
+    <fieldset>
+      <legend>Delivery or Pickup Contact Information</legend>
+      <div>
+        <p>
+          <label for="first-name">First Name</label>
+          <input type="text" name='first-name' id=first-name>
+          <label for="last-name">Last Name</label>
+          <input type="text" name='last-name' id=last-name>
+        </p>  
+      </div>
+      <div>
+        <p>
+          <label for="address">Street Address</label>
+          <input type="text" name='address' id=address>
+          <label for="zip-code">Zip Code</label>
+          <input type="number" name='zip-code' id=zip-code>
+          <label for="city">City</label>
+          <input type="text" name='city' id='city'>
+          <label for="state"></label>
+          <select name="state" id="state">
+            <option value="">GA</option>
+          </select>
+        </p>
+      </div>
+      <div>
+        <label for="">Email Address</label>
+        <input type="email" name='email' id='email'>
+      </div>
+    </fieldset>
+
+    <br>
+
+
+    <fieldset>
+      <legend>Additional Instruction</legend>
+      <textarea name="comments" id="comments" cols="30" rows="10" placeholder='Enter additional instruction here'></textarea>
+    </fieldset>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <fieldset>
+      <legend>Credit Card Payments</legend>
+      <div>
+        <label for="credit-Fname">First Name</label>
+        <input type="text" name='credit-Fname' id='credit-Fname'>
+        <label for="credit-Lname">Last Name</label>
+        <input type="text" name='credit-Lname' id=credit-Lname>
+      </div>
+      <div>
+        <p>
+          <label for="credit-number">Card Number</label>
+          <input type="text" name='credit-number' id=credit-number minlength="13" maxlength="16" placeholder='1111 2222 3333 4444' required>
+          <label for="expiration-number">Expiration</label>
+          <input type="text" name='expiration-number' id=expiration-number placeholder='01/20'>
+          <label for="Security-number">CCV Code</label>
+          <input type="tel" name='Security-number' id=Security-number placeholder='123'>
+        </p>
+      </div>
+    </fieldset>
+
+    <br>
+
+    <div> 
+      <input type="submit" value='Place Order'>
+      <input type="reset" value='Start Over'>
+    </div>
+  </form>
+  
+  </body>
+</html>

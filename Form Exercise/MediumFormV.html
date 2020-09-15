@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+  
+  <div class='container'>
+  <form class='d-flex flex-column '>
+    <fieldset>
+      <legend class='text-center'>Sign Up Form</legend>
+      <div class = 'form-group'>
+        <label for="name">Name</label>
+        <input type="text" name='name' id='name' minlength="5" required class='form-control'>
+      </div>
+      <div class = 'form-group'>
+        <label for="password">Password</label>
+        <input type="password" name='password' id='password' minlength="6" maxlength="15" required class='form-control'>
+      </div>
+      <div class = 'form-group'>
+        <label for="email">Email</label>
+        <input type="email" name='email' id='email' required class='form-control'>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class = 'form-group'>
+        <legend>About Me</legend>
+        <textarea name="" id="" cols="30" rows="10" maxlength="250" class='form-control'></textarea>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>Are You a Robot</legend>
+      <p>
+        <label for="robot-check">Please Type: <strong>I am a human</strong></label>
+        <input id="robot-check" type="text" pattern="I am a human" required>
+      </p>
+    </fieldset>
+    <div class='text-center'>
+      <button type="button" class="btn btn-primary btn-sm">Sign Up</button>
+    </div>
+    
+  </form>
+</div>
+  
+</body>
+</html>
